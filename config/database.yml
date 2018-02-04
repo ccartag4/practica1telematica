@@ -25,7 +25,9 @@ test:
 
 production:
   <<: *default
-  adapter: postgreesql
+  
   database: address_mapper_production
-  username: address_mapper
-  password: <%= ENV['ADDRESS_MAPPER_DATABASE_PASSWORD'] %>
+  adapter: postgreesql
+  host: ENV["DATABASE_URL"]
+  #username: address_mapper
+  password: 
