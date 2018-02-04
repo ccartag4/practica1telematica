@@ -28,4 +28,4 @@ production:
   adapter: postgreesql
   database: address_mapper_production
   username: address_mapper
-  password: a2357014A
+  password: <%= ENV['ADDRESS_MAPPER_DATABASE_PASSWORD'] %>
