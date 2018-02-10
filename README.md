@@ -161,8 +161,35 @@ https://gpstelematics.herokuapp.com/
 
 # DCA
 
+La instalacion y configuracion del DCA fue realizado a traves de los siguientes tutoriales referenciados en los links:
 
-[https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/apache/oss/el7/deploy_app.html]
+Installing Passenger + Apache on a Linux/Unix production server
+
+## Instalacion de passenger + apache en Linux/Unix en servidor,en nuestro caso CentOs
+
+https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/apache/oss/el7/deploy_app.html
+
+## Desplegando una aplicacion Ruby en Linux/Unix en servidor.
+
+https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/apache/oss/el7/deploy_app.html
+
+## Configuracion de referencias para Passenger y Apache
+
+https://www.phusionpassenger.com/library/config/apache/reference/#passengerfriendlyerrorpages
+
+## Manual de problemas Apache + Passenger en Ruby
+
+https://www.phusionpassenger.com/library/admin/apache/troubleshooting/ruby/
+
+el url para ver la aplicacion desde el servidor es:
+
+
+```
+10.131.137.154::3000
+
+```
+
+
 
 
 
