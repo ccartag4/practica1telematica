@@ -9,7 +9,7 @@ Este proyecto es la entrega 1 de la materia topicos especiales de ingenieria de 
 
 # 1. Analisis
 
-#1.1 Requisitos funcionales:
+##1.1 Requisitos funcionales:
 
 1. Crear usuario
 2. Obtener localizacion actual
@@ -18,51 +18,43 @@ Este proyecto es la entrega 1 de la materia topicos especiales de ingenieria de 
 
 # Installation
 
-# proyecto local
+## Proyecto local
 
 se debe crear el directorio de trabajo con cd mkdir. en este caso practica1telematica
 
-instalacion ruby: $ sudo apt-get install ruby-full
+instalacion ruby:
 
-creacion de un entorno de trabajo de ruby on rails: rails new <nombreaplicacion> -T -B
+```
+$ sudo apt-get install ruby-full
+```
 
-instalacion bootstrap: rails g bootstrap:install
+creacion de un entorno de trabajo de ruby on rails: 
 
-Modelo User y Location schema:
+```
+rails new <nombreaplicacion> -T -B
+```
 
-ActiveRecord::Schema.define(version: 20180129235329) do
+instalacion bootstrap: 
 
-  create_table "locations", force: :cascade do |t|
-    t.string "longitude"
-    t.string "latitude"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.index ["user_id"], name: "index_locations_on_user_id"
-  end
+```
+rails g bootstrap:install
+```
 
-  create_table "users", force: :cascade do |t|
-    t.string "mail"
-    t.string "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string "current_sign_in_ip"
-    t.string "last_sign_in_ip"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
+creacion del modelo User y Location, genera tambien las vistas y controladores: 
 
-end
+```
+rails g model <atributos>
+```
 
-ejecutar programa local: rails s
+ejecutar programa local: 
+
+```
+rails s
+```
+
+## Heroku
+
+
 
 
 
