@@ -181,48 +181,17 @@ https://www.phusionpassenger.com/library/config/apache/reference/#passengerfrien
 
 https://www.phusionpassenger.com/library/admin/apache/troubleshooting/ruby/
 
+## Ejemplo clase despliegie en servidor CentOS
+
+https://github.com/st0263eafit/articulosEM
+
 el url para ver la aplicacion desde el servidor es:
 
 
 ```
-10.131.137.154::3000
+http://10.131.137.154::3000
 
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # practica1telematica
