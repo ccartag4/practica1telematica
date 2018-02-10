@@ -7,9 +7,9 @@ BY: Craig David Cartagena - ccartag4@eafit.edu.co
 
 Este proyecto es la entrega 1 de la materia topicos especiales de ingenieria de software de la universidad de EAFIT, donde se plantea una aplicacion web que localize mi posicion actual y me muestre mi posicion cada 5 segundos.
 
-# 1. Analisis
+# Analisis
 
-## 1.1 Requisitos funcionales:
+## Requisitos funcionales:
 
 1. Crear usuario
 2. Obtener localizacion actual
