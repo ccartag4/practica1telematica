@@ -25,31 +25,31 @@ se debe crear el directorio de trabajo con cd mkdir. en este caso practica1telem
 instalacion ruby:
 
 ```
-sudo apt-get install ruby-full
+$ sudo apt-get install ruby-full
 ```
 
 creacion de un entorno de trabajo de ruby on rails: 
 
 ```
-rails new <nombreaplicacion> -T -B
+$ rails new <nombreaplicacion> -T -B
 ```
 
 instalacion bootstrap: 
 
 ```
-rails g bootstrap:install
+$ rails g bootstrap:install
 ```
 
 creacion del modelo User y Location, genera tambien las vistas y controladores: 
 
 ```
-rails g model <atributos>
+$ rails g model <atributos>
 ```
 
 ejecutar programa local: 
 
 ```
-rails s
+$ rails s
 ```
 
 ## Heroku
@@ -117,14 +117,14 @@ ejecutar las gemas de la terminal, hemos conservado sqlite en test y desarollo, 
 actualizar las gemas:
 
 ```
-bundle install
+$ bundle install
 ```
 
 para obtener el schema de la nueva base de datos se debe correr:
 
 ```
-rake db:dbsetup
-rake db:migrate
+$ rake db:dbsetup
+$ rake db:migrate
 ```
 crear repositorio en github si comienza desde cero o clonar repositorio:
 
@@ -136,23 +136,23 @@ $ git clone git:https://github.com/ccartag4/practica1telematica.git
 actualizar github, y despues enviar la aplicacion a herouku:
 
 ```
-heroku create
-git push heroku master
+$ heroku create
+$ git push heroku master
 ```
 
 para actualizar github y heroku, cerrar terminal con control + c, e iniciar el servidor:
 
 ```
-rails s
+$ rails s
 ```
 
 verificar el cambio:
 
 ```
-git add
-git commit -m "modificacion del proyecto"
-git push origin master
-git push heroku
+$ git add
+$ git commit -m "modificacion del proyecto"
+$ git push origin master
+$ git push heroku
 ```
 
 entrar a la pagina y comprobar en este caso, pero si la creo desde cero verificar en su cuenta de heroku: 
