@@ -9,7 +9,7 @@ Este proyecto es la entrega 1 de la materia topicos especiales de ingenieria de 
 
 # 1. Analisis
 
-##1.1 Requisitos funcionales:
+## 1.1 Requisitos funcionales:
 
 1. Crear usuario
 2. Obtener localizacion actual
@@ -25,7 +25,7 @@ se debe crear el directorio de trabajo con cd mkdir. en este caso practica1telem
 instalacion ruby:
 
 ```
-$ sudo apt-get install ruby-full
+sudo apt-get install ruby-full
 ```
 
 creacion de un entorno de trabajo de ruby on rails: 
