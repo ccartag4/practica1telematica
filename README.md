@@ -163,7 +163,6 @@ https://gpstelematics.herokuapp.com/
 
 La instalacion y configuracion del DCA fue realizado a traves de los siguientes tutoriales referenciados en los links:
 
-Installing Passenger + Apache on a Linux/Unix production server
 
 ## Instalacion de passenger + apache en Linux/Unix en servidor,en nuestro caso CentOs
 
@@ -187,10 +186,8 @@ https://github.com/st0263eafit/articulosEM
 
 el url para ver la aplicacion desde el servidor es:
 
-
 ```
 http://10.131.137.154::3000
-
 ```
 
 
