@@ -162,6 +162,8 @@ https://gpstelematics.herokuapp.com/
 # DCA
 
 
+[https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/ownserver/apache/oss/el7/deploy_app.html]
+
 
 
 
