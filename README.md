@@ -84,20 +84,55 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ```
-ejecutar las gemas de la terminal:
+
+abrir database.yml y modificar:
+
+```
+
+default: &default
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  adapter: sqlite3
+  database: db/development.sqlite3
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  adapter: postgresql
+  database: address_mapper_test
+  
+
+
+production:
+  <<: *default
+  database: address_mapper_production
+  adapter: postgresql
+ejecutar las gemas de la terminal, hemos conservado sqlite en test y desarollo, pero pg es el de production:
+```
+actualizar las gemas:
 
 ```
 bundle install
 ```
 
-clonar repositorio:
+para obtener el schema de la nueva base de datos se debe correr:
+
+```
+rake db:dbsetup
+rake db:migrate
+```
+crear repositorio en github si comienza desde cero o clonar repositorio:
 
 ```
 $ git clone git:https://github.com/ccartag4/practica1telematica.git
 
 
 ```
-
 actualizar github, y despues enviar la aplicacion a herouku:
 
 ```
@@ -105,7 +140,7 @@ heroku create
 git push heroku master
 ```
 
-para actualizar github y heroku, cerrar terminal con control + c e iniciar el servidor:
+para actualizar github y heroku, cerrar terminal con control + c, e iniciar el servidor:
 
 ```
 rails s
@@ -119,6 +154,10 @@ git commit -m "modificacion del proyecto"
 git push origin master
 git push heroku
 ```
+
+entrar a la pagina y comprobar en este caso, pero si la creo desde cero verificar en su cuenta de heroku: 
+
+https://gpstelematics.herokuapp.com/ 
 
 
 
